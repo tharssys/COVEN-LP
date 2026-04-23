@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>COVEN | Gestão Empresarial Contábil</title>
-<link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- Gotham carregada via @font-face -->
@@ -90,12 +89,12 @@ img { display: block; max-width: 100%; }
 /* �"?�"?�"? BOT�.ES �"?�"?�"? */
 .btn-dark {
   display: inline-flex; align-items: center; gap: 10px;
-  background: #1E1E1E; color: #D2F57F;
+  background: var(--marrom); color: var(--bg);
   padding: 14px 28px; border-radius: 100px;
   font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;
-  cursor: pointer; border: 1px solid rgba(210,245,127,0.3); transition: background .2s, color .2s; white-space: nowrap;
+  cursor: pointer; border: none; transition: background .2s; white-space: nowrap;
 }
-.btn-dark:hover { background: var(--marrom); color: var(--bg); border-color: var(--marrom); }
+.btn-dark:hover { background: #1E1E1E; color: #D2F57F; }
 .btn-ghost {
   display: inline-flex; align-items: center; gap: 10px;
   background: transparent; color: var(--cinza);
@@ -906,10 +905,12 @@ footer { background: var(--bg); border-top: 1px solid rgba(30,30,30,.1); padding
       <div>
         <span class="s-tag" style="display:inline-block; text-align:center; margin-bottom:0.75rem; padding:8px 20px; border-radius:100px; background:rgba(64,40,36,0.08); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border:1px solid rgba(64,40,36,0.2);">Sobre</span>
         <h2 class="s-title">Muito prazer,<br>sou Tales Santiago</h2>
-        <p class="s-sub">Formado em Ciências Contábeis pela UESPI, pós-graduado em reforma tributária e práticas tributárias fiscais com +7 anos atuando no mercado. Já gerei +200 mil em aproveitamento de impostos para meus clientes.</p>
+        <p class="s-sub">Formado em Ciências Contábeis pela UESPI e pós-graduado em Reforma Tributária e Práticas Tributárias Fiscais, Tales Santiago tem mais de 7 anos de experiência no mercado contábil. Especialista em estruturar, regularizar e gerir empresas com eficiência fiscal, já ajudou centenas de negócios a crescerem com segurança — constituindo CNPJs, regularizando operações e gerando economia real em impostos para os seus clientes.</p>
         <div class="sobre-stats">
           <div class="stat"><div class="stat-n">+7</div><div class="stat-l">Anos de experiência</div></div>
-          <div class="stat"><div class="stat-n">+200k</div><div class="stat-l">Em impostos economizados</div></div>
+          <div class="stat"><div class="stat-n">+200k</div><div class="stat-l">Em economia de impostos no Salão-Parceiro</div></div>
+          <div class="stat"><div class="stat-n">+500</div><div class="stat-l">CNPJs constituídos</div></div>
+          <div class="stat"><div class="stat-n">+300</div><div class="stat-l">Empresas regularizadas</div></div>
         </div>
         <div class="sobre-spin" style="display:flex; justify-content:center; margin-top:2.5rem;">
           <img src="logo-spin.svg" alt="COVEN" style="width:200px; height:200px; animation:spinLogo 18s linear infinite;">
